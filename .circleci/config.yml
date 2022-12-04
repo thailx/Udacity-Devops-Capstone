@@ -35,9 +35,9 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check
-          auth: 
-            username: thailx
-            password: $DOCKERHUB_PASSWORD
+          # auth: 
+          #   username: thailx
+          #   password: $DOCKERHUB_PASSWORD
       - docker/build:
           image: thailx/flaskapp
           tag: "1.0"
